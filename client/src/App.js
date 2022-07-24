@@ -35,6 +35,7 @@ const App = () => {
   
   useEffect(() => {
     const fetchData = async () => {
+      console.log("fetching data");
       const responseJson = await searchImages("");
       const responseFolders = await getFolders();
       setImageList(responseJson.resources);
