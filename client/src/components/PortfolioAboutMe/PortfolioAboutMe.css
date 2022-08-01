@@ -1,5 +1,12 @@
-.PortfolioAboutMe {}
+.PortfolioAboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 30px;
+}
 
 .logo-sm {
     height: 50px;
+    cursor: pointer;
 }
