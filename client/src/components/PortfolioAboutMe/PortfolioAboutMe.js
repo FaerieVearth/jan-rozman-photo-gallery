@@ -12,19 +12,16 @@ const openSite = (url) => {
 
 const PortfolioAboutMe = () => (
   <div className="PortfolioAboutMe">
-    <div className="intro-text">Hi my name is Jan</div>
-    <div className="mobile-divider"></div>
-    <div className="welcome-text">WELCOME TO MY PERSONAL WEB PORTFOLIO</div>
-    <div className="mobile-divider"></div>
+    <h2 className="intro-text">Hi my name is Jan</h2>
     <div className="fuel-text">
+      <h3 className="welcome-text">WELCOME TO MY PERSONAL WEB PORTFOLIO</h3>
       What fuels me is capturing interesting moments that happen around us.
       Weather it is a one in a lifetime occasion or just common day to day stuff
       every moment can be made great and is in a way, worth keeping. Feel free
       to browse my personal web gallery.
     </div>
-    <div className="mobile-divider"></div>
-    <div className="equipment-header">EQUIPMENT:</div>
     <div className="li-container">
+      <h3 className="equipment-header">EQUIPMENT:</h3>
       <li>Camera - Canon eos r5</li>
       <li>Strobes - Quadralite ad600 pro, Quadralite stroboss 60 basic</li>
       <li>
@@ -35,7 +32,6 @@ const PortfolioAboutMe = () => (
       <li>Tripod - 2x Godox 260T 260cm Air, Manfrotto MK290</li>
       <li>Softbox - Quadralite hexadecagon 90cm, Aputure ligh dome mini II</li>
     </div>
-    <div className="mobile-divider"></div>
     <div className="sm-cont">
       <div className="contact-container">
         <div className="contact-header">CONTACT:</div>

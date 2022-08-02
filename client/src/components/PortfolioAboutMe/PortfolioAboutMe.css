@@ -4,6 +4,19 @@
     justify-content: space-between;
     align-items: start;
     padding: 30px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.fuel-text {
+    border: rgb(255, 124, 48) 2px solid;
+}
+
+.li-container {
+    border: rgb(255, 124, 48) 2px solid;
+}
+
+.sm-cont {
+    border: rgb(255, 124, 48) 2px solid;
 }
 
 .logo-sm {

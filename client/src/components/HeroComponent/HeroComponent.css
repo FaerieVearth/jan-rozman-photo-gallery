@@ -1,4 +1,7 @@
 .HeroComponent {
+    position: relative;
     display: flex;
-    height: 500px;
+    flex-direction: row-reverse;
+    height: 100%;
+    height: fill-available;
 }

@@ -83,7 +83,7 @@ const App = () => {
 
   return (
     <div>
-      <Box sx={{ width: "100%", typography: "body1" }}>
+      <Box class="root-container" sx={{ width: "100%", typography: "body1" }}>
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <TabList onChange={handleChange} centered>
@@ -91,10 +91,10 @@ const App = () => {
               <Tab label="My Work" value="2" />
             </TabList>
           </Box>
-          <TabPanel value="1">
+          <TabPanel class="tab-panel" value="1">
             <HeroComponent></HeroComponent>
           </TabPanel>
-          <TabPanel value="2">
+          <TabPanel  class="tab-panel" value="2">
             {folderList.map((folder) => {
               return (
                 <button
