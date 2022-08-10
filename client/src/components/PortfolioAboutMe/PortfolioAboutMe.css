@@ -1,10 +1,33 @@
 .PortfolioAboutMe {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: start;
     padding: 30px;
     font-family: 'Titillium Web', sans-serif;
+    flex: 1;
+}
+
+.left {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-text {
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    position: relative;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-transform: capitalize;
 }
 
 .fuel-text {
