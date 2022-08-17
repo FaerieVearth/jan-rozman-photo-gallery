@@ -1,4 +1,5 @@
 body {
+  background-color: #ababab68;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +11,30 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.load-more {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.tab-panel {
+  padding: 0px !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .MuiButton-root {
+    font-size: 0.575rem !important;
+  }
 }

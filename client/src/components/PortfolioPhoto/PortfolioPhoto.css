@@ -1,14 +1,17 @@
 .PortfolioPhoto {
-    height: 92vh;
     overflow: hidden;
-    flex: 3 1;
-    margin: 10px;
 }
 
 .mainPhoto {
-    height: 2000px;
+    height: 2100px;
     position: relative;
     left: 50%;
-    top: 800px;
+    top: 750px;
     -webkit-transform: translateY(-50%) translateX(-50%);
 }
+
+@media only screen and (max-width: 600px) {
+    .PortfolioPhoto {
+        display: none;
+    }
+  }

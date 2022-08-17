@@ -9,8 +9,20 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
+import Button from "@mui/material/Button";
 
 const App = () => {
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
+
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 600);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  });
+
   const [imageList, setImageList] = useState([]);
   const [nextCursor, setNextCursor] = useState(null);
   const [searchValue, setSearchValue] = useState("");
@@ -83,35 +95,60 @@ const App = () => {
 
   return (
     <div>
-      <Box class="root-container" sx={{ width: "100%", typography: "body1" }}>
+      <Box
+        className="root-container"
+        sx={{ width: "100%", typography: "body1" }}
+      >
         <TabContext value={value}>
-          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <Box sx={{ height: "6vh" }}>
             <TabList onChange={handleChange} centered>
               <Tab label="About Me" value="1" />
               <Tab label="My Work" value="2" />
             </TabList>
           </Box>
-          <TabPanel class="tab-panel" value="1">
+          <TabPanel className="tab-panel" value="1">
             <HeroComponent></HeroComponent>
           </TabPanel>
-          <TabPanel  class="tab-panel" value="2">
-            {folderList.map((folder) => {
-              return (
-                <button
-                  key={folder.name}
-                  onClick={() => searchPhotos(folder.name)}
-                >
-                  {folder.name}
-                </button>
-              );
-            })}
-            {imageList ? (
-              <Gallery
-                photos={photoObj}
-                onClick={openLightbox}
-                direction={"column"}
-              />
-            ) : null}
+          <TabPanel className="tab-panel" value="2">
+            <div className="button-group">
+              {folderList.map((folder) => {
+                return (
+                  <Button
+                    variant="outlined"
+                    key={folder.name}
+                    onClick={() => searchPhotos(folder.name)}
+                  >
+                    {folder.name}
+                  </Button>
+                );
+              })}
+            </div>
+            <div>
+              {isDesktop ? (
+                <div>
+                  {" "}
+                  {imageList ? (
+                    <Gallery
+                      photos={photoObj}
+                      onClick={openLightbox}
+                      direction={"column"}
+                    />
+                  ) : null}
+                </div>
+              ) : (
+                <div>
+                  {" "}
+                  {imageList ? (
+                    <Gallery
+                      photos={photoObj}
+                      onClick={openLightbox}
+                      direction={"row"}
+                    />
+                  ) : null}
+                </div>
+              )}
+            </div>
+
             <ModalGateway>
               {viewerIsOpen ? (
                 <Modal onClose={closeLightbox}>
@@ -126,10 +163,13 @@ const App = () => {
                 </Modal>
               ) : null}
             </ModalGateway>
+
             {nextCursor && (
-              <button onClick={handleLoadMoreButton}>
-                More Awesome Photos
-              </button>
+              <div className="load-more">
+                <Button onClick={handleLoadMoreButton} variant="contained">
+                  More Awesome Photos
+                </Button>
+              </div>
             )}
           </TabPanel>
         </TabContext>

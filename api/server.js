@@ -26,6 +26,7 @@ app.get("/search?", async (req, res) => {
       params: {
         expression: req.query.expression,
         next_cursor: req.query.next_cursor,
+        max_results: 18
       },
     });
     return res.send(response.data);

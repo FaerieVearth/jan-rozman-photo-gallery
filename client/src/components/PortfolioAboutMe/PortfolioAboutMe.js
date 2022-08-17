@@ -39,17 +39,18 @@ const PortfolioAboutMe = () => (
       </div>
       <div className="sm-cont">
         <div className="contact-container">
-          <div className="contact-header">CONTACT:</div>
+          <h3 className="contact-header">CONTACT:</h3>
           <div className="contact-text">
             <span>
               <a className="" href="tel:+38641519414">
-                Tel: +38641519414
+                Tel: +38641519414<br></br>
               </a>
+              
             </span>
             <span>Mail: Rozman.jan00@gmail.com</span>
           </div>
         </div>
-        <div class="logo-sm-cont">
+        <div className="logo-sm-cont">
           <img
             className="logo-sm"
             src={igLogo}

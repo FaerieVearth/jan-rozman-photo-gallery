@@ -1,8 +1,12 @@
 .HeroComponent {
     display: flex;
-    position: relative;
-    display: flex;
     flex-direction: row-reverse;
-    height: 100%;
-    height: fill-available;
+    height: 94vh;
 }
+
+.button-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }

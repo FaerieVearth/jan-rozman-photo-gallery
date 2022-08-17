@@ -3,22 +3,25 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
-    padding: 30px;
+    padding: 20px;
     font-family: 'Titillium Web', sans-serif;
-    flex: 1;
+    width: 360px;
+    height: 85vh;
 }
 
 .left {
     height: 100%;
-    width: 25%;
+    width: 20%;
     display: flex;
-    align-items:center;
+    align-items: flex-start;
     justify-content: center;
+    margin-right: 10px;
 }
 
 .right {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .intro-text {
@@ -28,21 +31,50 @@
     font-size: 4rem;
     font-weight: bolder;
     text-transform: capitalize;
+    top: 15vh;
 }
 
 .fuel-text {
-    border: rgb(255, 124, 48) 2px solid;
+    /*border: rgb(255, 124, 48) 2px solid;*/
 }
 
 .li-container {
-    border: rgb(255, 124, 48) 2px solid;
+    /*border: rgb(255, 124, 48) 2px solid;*/
 }
 
 .sm-cont {
-    border: rgb(255, 124, 48) 2px solid;
+    /*border: rgb(255, 124, 48) 2px solid;*/
+}
+
+.sm-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo-sm-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
 
 .logo-sm {
     height: 50px;
     cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
 }
+
+@media only screen and (max-width: 600px) {
+    .PortfolioAboutMe {
+        align-items: start;
+        padding: 5px;
+        font-family: 'Titillium Web', sans-serif;
+        width: 100%;
+    }
+
+    .right {
+        height: 100%;
+        justify-content: space-evenly;
+    }
+  }
