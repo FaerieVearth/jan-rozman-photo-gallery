@@ -1,12 +1,13 @@
 .PortfolioPhoto {
     overflow: hidden;
+    width: 100%;
 }
 
 .mainPhoto {
-    height: 2100px;
+    height: 3000px;
     position: relative;
     left: 50%;
-    top: 750px;
+    top: 1053px;
     -webkit-transform: translateY(-50%) translateX(-50%);
 }
 

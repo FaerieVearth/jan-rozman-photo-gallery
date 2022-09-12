@@ -1,0 +1,13 @@
+.MuiButtonBase-root.Mui-selected {
+    color: white;
+}
+
+.MuiButton-root {
+    border: 2px solid #9b9b9b;
+    color: #9b9b9b;
+}
+
+.MuiButton-root.Mui-selected {
+    border: 2px solid white;
+    color: white;
+}

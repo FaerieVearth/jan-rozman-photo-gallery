@@ -10,6 +10,7 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import Button from "@mui/material/Button";
+import "./App.css";
 
 const App = () => {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
@@ -97,13 +98,27 @@ const App = () => {
     <div>
       <Box
         className="root-container"
-        sx={{ width: "100%", typography: "body1" }}
+        sx={{ width: "100%", typography: "body1", overflow: "hidden" }}
       >
         <TabContext value={value}>
           <Box sx={{ height: "6vh" }}>
             <TabList onChange={handleChange} centered>
-              <Tab label="About Me" value="1" />
-              <Tab label="My Work" value="2" />
+              <Tab
+                sx={{
+                  fontSize: "1.6rem",
+                  color: "#9b9b9b"
+                }}
+                label="About Me"
+                value="1"
+              />
+              <Tab
+                sx={{
+                  fontSize: "1.6rem",
+                  color: "#9b9b9b"
+                }}
+                label="My Work"
+                value="2"
+              />
             </TabList>
           </Box>
           <TabPanel className="tab-panel" value="1">
@@ -166,7 +181,14 @@ const App = () => {
 
             {nextCursor && (
               <div className="load-more">
-                <Button onClick={handleLoadMoreButton} variant="contained">
+                <Button
+                  sx={{
+                    border: "2px solid rgba(255, 255, 255, 0.5)",
+                    color: "#fff",
+                  }}
+                  onClick={handleLoadMoreButton}
+                  variant="contained"
+                >
                   More Awesome Photos
                 </Button>
               </div>

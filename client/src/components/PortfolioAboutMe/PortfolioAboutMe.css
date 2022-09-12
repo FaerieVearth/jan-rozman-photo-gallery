@@ -1,55 +1,44 @@
 .PortfolioAboutMe {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: start;
-    padding: 20px;
     font-family: 'Titillium Web', sans-serif;
-    width: 360px;
+    width: 250px;
     height: 85vh;
-}
-
-.left {
-    height: 100%;
-    width: 20%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin-right: 10px;
-}
-
-.right {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 .intro-text {
     transform: rotate(-90deg);
     white-space: nowrap;
     position: relative;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bolder;
     text-transform: capitalize;
-    top: 15vh;
+    top: 121px;
+    left: -113px;
+    color: white;
 }
 
-.fuel-text {
-    /*border: rgb(255, 124, 48) 2px solid;*/
-}
-
-.li-container {
-    /*border: rgb(255, 124, 48) 2px solid;*/
+.welcome-text {
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    top: 245px;
+    left: -520px;
+    color: #9b9b9b;
 }
 
 .sm-cont {
-    /*border: rgb(255, 124, 48) 2px solid;*/
-}
-
-.sm-cont {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: white;
 }
 
 .logo-sm-cont {
@@ -73,8 +62,13 @@
         width: 100%;
     }
 
-    .right {
-        height: 100%;
-        justify-content: space-evenly;
+    .sm-cont {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        color: black;
     }
   }
