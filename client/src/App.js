@@ -102,7 +102,15 @@ const App = () => {
       >
         <TabContext value={value}>
           <Box sx={{ height: "6vh" }}>
-            <TabList onChange={handleChange} centered>
+            <TabList
+              onChange={handleChange}
+              centered
+              TabIndicatorProps={{
+                style: {
+                  background: "#9b9b9b"
+                },
+              }}
+            >
               <Tab
                 sx={{
                   fontSize: "1.6rem",
@@ -132,6 +140,10 @@ const App = () => {
                     variant="outlined"
                     key={folder.name}
                     onClick={() => searchPhotos(folder.name)}
+                    sx={{
+                      border: "2px solid rgba(255, 255, 255, 0.5)",
+                      color: "#fff",
+                    }}
                   >
                     {folder.name}
                   </Button>

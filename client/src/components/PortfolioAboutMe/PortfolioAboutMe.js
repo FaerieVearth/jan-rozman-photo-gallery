@@ -16,7 +16,6 @@ const PortfolioAboutMe = () => (
     <h3 className="welcome-text">welcome to my personal web portfolio</h3>
     <div className="sm-cont">
       <div className="contact-container">
-        <h3 className="contact-header">CONTACT:</h3>
         <div className="contact-text">
           <span>
             <a className="" href="tel:+38641519414">
