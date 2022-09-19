@@ -66,9 +66,24 @@
         position: absolute;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
+        text-align: center;
         gap: 10px;
-        color: black;
+        color: #9b9b9b;
+        left: 0px;
+        width: 100%
+    }
+
+    .intro-text {
+        font-size: 4rem;
+        left: -113px;
+        top: 121px;
+    }
+    
+    .welcome-text {
+        font-size: 1.2rem;
+        left: -404px;
+        top: 198px;
     }
   }

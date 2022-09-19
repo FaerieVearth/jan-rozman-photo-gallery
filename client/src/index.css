@@ -56,4 +56,8 @@ button {
   .MuiButton-root {
     font-size: 0.575rem !important;
   }
+
+  .button-group {
+    padding-top: 10px;
+  }
 }

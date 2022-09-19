@@ -4,12 +4,15 @@ const cors = require("cors");
 const { json } = require("body-parser");
 const axios = require("axios");
 
+const path = require("path");
+
 const app = express();
 
 const API_KEY = "886615613355328";
 const API_SECRET = "3a2zm4dmAxBj53wh6RPXwBfDT6I";
 const CLOUD_NAME = "dqpemptui";
 
+app.use(express.static(path.join(__dirname + "/public")));
 app.use(cors());
 app.use(json());
 
@@ -46,5 +49,5 @@ app.get("/folders", async (req, res) => {
   }
 });
 
-const PORT = 7000;
+const PORT = process.env.PORT || 7000;
 app.listen(PORT, console.log(`Server running on port ${PORT}`));

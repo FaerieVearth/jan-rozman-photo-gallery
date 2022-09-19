@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.65077e89.css",
+    "main.js": "/static/js/main.9ccd684b.js",
+    "static/media/iglogo.png": "/static/media/iglogo.cdabe3ffb3fc7d592ec9.png",
+    "static/media/gmaillogo.png": "/static/media/gmaillogo.77e2b0ae31a5031cae82.png",
+    "static/media/fblogo.png": "/static/media/fblogo.894a39a80aeb24dfc745.png",
+    "index.html": "/index.html",
+    "main.65077e89.css.map": "/static/css/main.65077e89.css.map",
+    "main.9ccd684b.js.map": "/static/js/main.9ccd684b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65077e89.css",
+    "static/js/main.9ccd684b.js"
+  ]
+}

@@ -1,5 +1,3 @@
-const API_URL = "http://localhost:7000";
-
 export const searchImages = async (searchValue, nextCursor) => {
   const params = new URLSearchParams();
 
@@ -12,7 +10,7 @@ export const searchImages = async (searchValue, nextCursor) => {
   }
 
   try {
-    const response = await fetch(`${API_URL}/search?${params}`);
+    const response = await fetch(`/search?${params}`);
     const responseJSON = await response.json();
     return responseJSON;
   } catch (err) {
@@ -22,7 +20,7 @@ export const searchImages = async (searchValue, nextCursor) => {
 
 export const getFolders = async () => {
   try {
-    const response = await fetch(`${API_URL}/folders`);
+    const response = await fetch(`/folders`);
     const responseJSON = await response.json();
     return responseJSON;
   } catch (err) {
