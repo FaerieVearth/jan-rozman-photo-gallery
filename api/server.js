@@ -12,7 +12,7 @@ const API_KEY = "886615613355328";
 const API_SECRET = "3a2zm4dmAxBj53wh6RPXwBfDT6I";
 const CLOUD_NAME = "dqpemptui";
 
-app.use(express.static(path.join(__dirname + "/public")));
+//app.use(express.static(path.join(__dirname + "/public")));
 app.use(cors());
 app.use(json());
 

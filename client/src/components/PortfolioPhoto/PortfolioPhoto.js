@@ -4,7 +4,7 @@ import './PortfolioPhoto.css';
 
 const PortfolioPhoto = () => (
   <div className="PortfolioPhoto">
-      <img className="mainPhoto" src="https://live.staticflickr.com/65535/51761786269_a8c3419448_k.jpg" alt="portfolio"/>
+      <img className="mainPhoto" src="https://res.cloudinary.com/dqpemptui/image/upload/v1664723993/headshot/Naslovnica_jv6hqv.jpg" alt="portfolio"/>
   </div>
 );
 

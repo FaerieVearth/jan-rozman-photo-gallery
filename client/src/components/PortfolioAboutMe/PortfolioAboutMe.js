@@ -29,7 +29,7 @@ const PortfolioAboutMe = () => (
         <img
           className="logo-sm"
           src={igLogo}
-          onClick={() => openSite("https://www.instagram.com/clarityst/")}
+          onClick={() => openSite("https://www.instagram.com/janrozman_/")}
         />
         <img
           className="logo-sm"
