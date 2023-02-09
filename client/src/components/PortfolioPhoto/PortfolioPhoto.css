@@ -5,14 +5,12 @@
 
 .mainPhoto {
     position: relative;
-    left: 50%;
-    top: 685px;
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    width: 100%;
+    -webkit-transform: translateY(-58%) translateX(-72%);
+    scale: 0.45;
 }
 
 @media only screen and (max-width: 600px) {
     .PortfolioPhoto {
-        display: none;
+        /*display: none;*/
     }
   }
